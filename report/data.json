@@ -1,0 +1,25 @@
+
+{   
+    "title": "LNPCompass^{TM} High-Throughput Lipid Structure Prediction Report",
+    "type": "Individual",
+    "base_information": {
+        "timestamp": "07/13/2023 18:11:02 UTC",
+        "client uuid": "CHN-19bd7f0c-20230712-0242ac120002",
+        "model version": "4.2.11",
+        "processing model": "OFFLINE",
+        "time elapsed": "2142ms",
+        "data count": "6",
+        "vlid data cound": "6"
+    },
+    "data":[
+        {"name": "lcsw30", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCCN(C)C)CCCN(CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CO2)c(OC)c1", "probability": "0.223"}, 
+        {"name": "lcsw31", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCN(C)CCN(CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CO2)c(OC)c1", "probability": "0.222"}, 
+        {"name": "lcsw32", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCCN(C)CCCN(CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CO2)c(OC)c1", "probability": "0.221"}, 
+        {"name": "lcsw33", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCCn3ccnc3)CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CO2)c(OC)c1", "probability": "0.220"}, 
+        {"name": "lcsw32", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCN3CCCCC3)CO2)c(OC)c1", "probability": "0.221"}, 
+        {"name": "lcsw33", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCCN(C)C)CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CO2)c(OC)c1", "probability": "0.220"}, 
+        {"name": "lcsw32", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCCN(CC)CC)CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CO2)c(OC)c1", "probability": "0.221"}, 
+        {"name": "lcsw33", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCN(C)C)CO2)c(OC)c1", "probability": "0.220"},
+        {"name": "lcsw34", "structure": "CCCCCCOc1cc(OC)c(C2OCC(C)(COC(=O)CCN(CCC(=O)OCC3(C)COC(c4c(OC)cc(OCCCCCC)cc4OC)OC3)CCC3CCCN3C)CO2)c(OC)c1", "probability": "0.220"}
+    ]
+}
