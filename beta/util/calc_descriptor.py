@@ -7,7 +7,9 @@ import numpy as np
 def calc_descriptor(smile):
     bothSignal = from_smiles(smile, descriptors=True, fingerprints=True, timeout = 10)
     df: DataFrame = pd.DataFrame.from_dict([bothSignal])
-    with open(f"util/cols", "r") as f:
+    with open("./tmp", "w") as f:
+        f.write(json.dumps(df.columns.tolist()))
+    with open(f"util/columns", "r") as f:
         data_str = f.read()
         data = json.loads(data_str)
     data = df[data].fillna(0)
