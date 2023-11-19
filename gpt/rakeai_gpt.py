@@ -22,11 +22,10 @@ def fixGrammer(chunk):
     messages=[
         {"role": "user",
         "content": tone_prompt() + 
-                   f"\n\n Text is: {chunk}",
+                   f"\n\n rewrite the following text paragraph: {chunk}",
             },
         ])
-    print(response)
-
+    return response.choices[0].message.content
 
 data = open("text_file", 'r').read()
 fixGrammer(data)
