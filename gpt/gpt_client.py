@@ -32,3 +32,12 @@ class gpt_client:
                 },
             ])
         return response.choices[0].message.content
+
+    def fix_grammer_with_prompt(self, input_content, prompt_content):
+        response = self.client.chat.completions.create(model=config.model,
+        messages=[
+            {"role": "user",
+            "content": prompt_content + f"\n rewrite the following text paragraph: {input_content}",
+                },
+            ])
+        return response.choices[0].message.content

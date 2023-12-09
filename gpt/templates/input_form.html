@@ -1,0 +1,11 @@
+<form method="POST">
+    <label for"prompt"> Prompt: </label>
+    <textarea name="prompt" rows="20" cols="100" id="prompt"></textarea>
+    <br>
+    <label for"text_input"> Input Text: </label>
+    <textarea name="text_input" rows="20" cols="100" id="text_input" name="text_input"></textarea>
+    <input type="submit">
+</form>
+{% if processed_text %}
+<p id="text">{{processed_text}}</p>
+{% endif %}

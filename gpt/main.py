@@ -1,15 +1,20 @@
-from cli import academic_gpt
+from flask import Flask, request, render_template
 from gpt_client import gpt_client
-from docx_manager import docx_manager
-import util
 
-if __name__ == "__main__":
-    print("start")
-    gpt_cli = academic_gpt()
-    print(gpt_cli.get_destination_path())
-    print(gpt_cli.get_prompt_path())
-    print(gpt_cli.get_source_path())
+app = Flask(__name__)
 
-    gpt_client = gpt_client()
-    docx_manager = docx_manager(gpt_cli.get_source_path(), gpt_cli.get_destination_path())
-    docx_manager.fine_tune(gpt_client, gpt_cli.get_prompt_path())
+@app.route("/")
+def form():
+    return render_template('input_form.html')
+
+@app.route('/', methods=['POST'])
+def my_form_post():
+    gpt = gpt_client()
+    prompt = request.form['prompt']
+    if not prompt:
+        prompt = gpt.get_default_prompt() 
+    text_input = request.form['text_input']
+    result = gpt.fix_grammer_with_prompt(text_input, prompt)
+    processed_text = result
+    return render_template("input_form.html", processed_text=processed_text)
+
