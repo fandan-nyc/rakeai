@@ -18,7 +18,7 @@
                 <div class="container shape-container d-flex">
                     <div class="col px-0 rake_title">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-8">
                                 <h1 class="display-3  text-white">RAKE AI 
                                     <span>your academic editor</span>
                                 </h1>
@@ -32,12 +32,10 @@
             </section>
             <!-- 1st Hero Variation -->
         </div>
-        <section class="section section-lg pt-lg-0 mt--200">
+        <section class="section section-lg pt-lg-0 mt--300">
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-lg-12">
-                        <div class="row row-grid">
-                            <div class="col-lg-6">
+                            <div class="col-lg-12">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
                                     </icon>
@@ -60,7 +58,13 @@
                                     </base-button> -->
                                 </card>
                             </div>
-                            <div class="col-lg-6">
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg pt-lg-0 mt--120">
+            <div class="container">
+                <div class="row justify-content-center">
+                            <div class="col-lg-12">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
                                     </icon>
@@ -83,9 +87,13 @@
                                     </base-button> -->
                                 </card>
                             </div>
-                        </div>
-                        <div class="row row-grid">
-                            <div class="col-lg-6">
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg pt-lg-0 mt--120">
+            <div class="container">
+                <div class="row justify-content-center">
+                            <div class="col-lg-12">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-planet" type="warning" rounded class="mb-4">
                                     </icon>
@@ -93,7 +101,6 @@
                                     <p class="description mt-3">This service extends beyond basic spelling and grammar checks
                                          to include enhancements in the logical flow and coherence of your manuscript. <br>
                                          Ideal for ensuring clarity and precision in your academic writing.</p>
-                                         <br><br><br><br>
                                     <div>
                                         <strong>Price:</strong><p class="price">USD 0.07 / word</p><p class="price">RMB 0.60 / word</p>
                                     </div>
@@ -110,7 +117,13 @@
                                     </base-button> -->
                                 </card>
                             </div>
-                            <div class="col-lg-6">
+                </div>
+            </div>
+        </section>
+        <section class="section section-lg pt-lg-0 mt--120">
+            <div class="container">
+                <div class="row justify-content-center">
+                            <div class="col-lg-12">
                                 <card class="border-0" hover shadow body-classes="py-5">
                                     <icon name="ni ni-chart-bar-32" type="default" rounded class="mb-4">
                                     </icon>
@@ -136,8 +149,6 @@
                                     </base-button> -->
                                 </card>
                             </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
@@ -373,7 +384,7 @@
                 </div>
             </div>
         </section> -->
-        <section class="section section-lg pt-0">
+        <section class="section section-lg pt-0 mt--120">
             <div class="container">
                 <card gradient="warning"
                       no-body
@@ -546,5 +557,8 @@ export default {
 }
 .rake_title{
     margin-top: -150px;
+}
+.mt--120{
+    margin-top: -80px !important;
 }
 </style>
