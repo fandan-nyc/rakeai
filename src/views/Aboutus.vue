@@ -1,83 +1,78 @@
 <template>
-    <div>
-
-        <div class="position-relative">
-            <!-- shape Hero -->
-            <section class="section-shaped my-0">
-                <div class="shape shape-style-1 shape-default shape-skew">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-                <div class="container shape-container d-flex">
-                    <div class="col px-0 rake_title">
-                        <div class="row">
-                            <div class="col-lg-8">
-                                <h1 class="display-3  text-white">RAKE AI 
-                                    <span>your academic editor</span>
-                                </h1>
-                                <p class="lead  text-white">RakeAI’s mission is to provide non-native speakers with academic writing editing services that are <strong>>10</strong> times faster and <strong>2/3 cheaper</strong> than traditional editing services.</p>    
-                                <p class="lead  text-white">RakeAI empowers academic writing revision with (1) our AI model specially trained for academic writing and (2) our PhD-level experts with over 10 years of experience in Biomaterials, Nanomaterials, Biology, and Chemistry.</p>
-                                <!-- <Productbuttons></Productbuttons> -->
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-            <!-- 1st Hero Variation -->
+  <div>
+    <div class="position-relative">
+      <!-- shape Hero -->
+      <section class="section-shaped my-0">
+        <div class="shape shape-style-1 shape-default shape-skew">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <section class="section section-lg pt-lg-0 mt--300">
-            <div class="container">
-                <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-check-bold" type="primary" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-primary text-uppercase">AI-Assisted Self-Editing</h6>
-                                    <p class="description mt-3">Utilize our cutting-edge AI tools to independently edit your academic writing. 
-                                        This self-service option empowers you to refine spelling and grammar with the help of advanced technology.</p>
-                                    <div>
-                                        <strong>Price:</strong><p class="price">USD 0.008 / word</p><p class="price">RMB 0.06 / word</p>
-                                    </div>
-                                    <div>
-                                        <strong>Lead Time:</strong><p>Instantly</p>
-                                    </div>
-                                    <!-- <div>
-                                        <badge type="primary" rounded>Price: USD 0.008 (RMB 0.06) / word</badge>
-                                        <badge type="primary" rounded>system</badge>
-                                        <badge type="primary" rounded>creative</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="primary" class="mt-4">
-                                        Learn more
-                                    </base-button> -->
-                                </card>
-                            </div>
-                </div>
+        <div class="container shape-container d-flex">
+          <div class="col px-0 rake_title">
+            <div class="row">
+              <div class="col-lg-8">
+                <h1 class="display-3 text-white">
+                  RAKE AI
+                  <span>your academic editor</span>
+                </h1>
+                <p class="lead text-white">RakeAI’s mission is to provide non-native speakers with academic writing editing services that are <strong>>10</strong> times faster and <strong>2/3 cheaper</strong> than traditional editing services.</p>
+                <p class="lead text-white">RakeAI empowers academic writing revision with (1) our AI model specially trained for academic writing and (2) our PhD-level experts with over 10 years of experience in Biomaterials, Nanomaterials, Biology, and Chemistry.</p>
+                <!-- <Productbuttons></Productbuttons> -->
+              </div>
             </div>
-        </section>
-        <section class="section section-lg pt-lg-0 mt--120">
-            <div class="container">
-                <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-istanbul" type="success" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-success text-uppercase">Basic Manuscript Revision</h6>
-                                    <p class="description mt-3">Send us your manuscript for a thorough review focusing on spelling and grammar. 
-                                        Our team ensures that your document is linguistically polished and error-free.</p>
-                                    <div>
-                                        <strong>Price:</strong><p class="price">USD 0.03 / word</p><p class="price">RMB 0.24 / word</p>
-                                    </div>
-                                    <div>
-                                        <strong>Lead Time:</strong><p>~24 h</p>
-                                    </div>
-                                        <!-- <div>
+          </div>
+        </div>
+      </section>
+      <!-- 1st Hero Variation -->
+    </div>
+    <!-- <section class="section section-lg pt-lg-0 mt--300">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <card class="border-0" hover shadow body-classes="py-5">
+              <icon name="ni ni-check-bold" type="primary" rounded class="mb-4"> </icon>
+              <h6 class="text-primary text-uppercase">AI-Assisted Self-Editing</h6>
+              <p class="description mt-3">Utilize our cutting-edge AI tools to independently edit your academic writing. This self-service option empowers you to refine spelling and grammar with the help of advanced technology.</p>
+              <div>
+                <strong>Price:</strong>
+                <p class="price">USD 0.008 / word</p>
+                <p class="price">RMB 0.06 / word</p>
+              </div>
+              <div>
+                <strong>Lead Time:</strong>
+                <p>Instantly</p>
+              </div>
+            </card>
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- <section class="section section-lg pt-lg-0 mt--120"> -->
+    <section class="section section-lg pt-lg-0 mt--300">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <card class="border-0" hover shadow body-classes="py-5">
+              <icon name="ni ni-istanbul" type="success" rounded class="mb-4"> </icon>
+              <h6 class="text-success text-uppercase">Basic Manuscript Revision</h6>
+              <p class="description mt-3">Send us your manuscript for a thorough review focusing on spelling and grammar. Our team ensures that your document is linguistically polished and error-free.</p>
+              <div>
+                <strong>Price:</strong>
+                <p class="price">USD 40 / 1000 words</p>
+                <p class="price">RMB 285 / 1000 words</p>
+              </div>
+              <div>
+                <strong>Lead Time:</strong>
+                <p>~24 h</p>
+              </div>
+              <!-- <div>
                                         <badge type="success" rounded>business</badge>
                                         <badge type="success" rounded>vision</badge>
                                         <badge type="success" rounded>success</badge>
@@ -85,29 +80,32 @@
                                     <base-button tag="a" href="#" type="success" class="mt-4">
                                         Learn more
                                     </base-button> -->
-                                </card>
-                            </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-lg pt-lg-0 mt--120">
-            <div class="container">
-                <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-planet" type="warning" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-warning text-uppercase">Advanced Manuscript Revision</h6>
-                                    <p class="description mt-3">This service extends beyond basic spelling and grammar checks
-                                         to include enhancements in the logical flow and coherence of your manuscript. <br>
-                                         Ideal for ensuring clarity and precision in your academic writing.</p>
-                                    <div>
-                                        <strong>Price:</strong><p class="price">USD 0.07 / word</p><p class="price">RMB 0.60 / word</p>
-                                    </div>
-                                    <div>
-                                        <strong>Lead Time:</strong><p>24-48 h</p>
-                                    </div>
-                                         <!-- <div>
+            </card>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-lg pt-lg-0 mt--120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <card class="border-0" hover shadow body-classes="py-5">
+              <icon name="ni ni-planet" type="warning" rounded class="mb-4"> </icon>
+              <h6 class="text-warning text-uppercase">Advanced Manuscript Revision</h6>
+              <p class="description mt-3">
+                This service extends beyond basic spelling and grammar checks to include enhancements in the logical flow and coherence of your manuscript. <br />
+                Ideal for ensuring clarity and precision in your academic writing.
+              </p>
+              <div>
+                <strong>Price:</strong>
+                <p class="price">USD 100 / 1000 words</p>
+                <p class="price">RMB 710 / 1000 words</p>
+              </div>
+              <div>
+                <strong>Lead Time:</strong>
+                <p>24-48 h</p>
+              </div>
+              <!-- <div>
                                         <badge type="warning" rounded>marketing</badge>
                                         <badge type="warning" rounded>product</badge>
                                         <badge type="warning" rounded>launch</badge>
@@ -115,31 +113,32 @@
                                     <base-button tag="a" href="#" type="warning" class="mt-4">
                                         Learn more
                                     </base-button> -->
-                                </card>
-                            </div>
-                </div>
-            </div>
-        </section>
-        <section class="section section-lg pt-lg-0 mt--120">
-            <div class="container">
-                <div class="row justify-content-center">
-                            <div class="col-lg-12">
-                                <card class="border-0" hover shadow body-classes="py-5">
-                                    <icon name="ni ni-chart-bar-32" type="default" rounded class="mb-4">
-                                    </icon>
-                                    <h6 class="text-default text-uppercase">Expert Scientific Review</h6>
-                                    <p class="description mt-3">Our most comprehensive service involves a complete revision for spelling, grammar, 
-                                        and logical flow, topped with an in-depth scientific review by our Ph.D.-level professional reviewers of Nature Nanotechnology, 
-                                        Science Advances, Advanced Materials, Bioactive Materials, etc. <br>
-                                        This service is tailored for manuscripts requiring high-level scientific peer-review and revision comments, 
-                                        providing an extensive critique and suggestions akin to a professional peer-review process. </p>
-                                    <div>
-                                        <strong>Price:</strong><p class="price">USD 0.70 / word</p><p class="price">RMB 5.00 / word</p>
-                                    </div>
-                                    <div>
-                                        <strong>Lead Time:</strong><p>2-7 days</p>
-                                    </div>
-                                        <!-- <div>
+            </card>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section section-lg pt-lg-0 mt--120">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <card class="border-0" hover shadow body-classes="py-5">
+              <icon name="ni ni-chart-bar-32" type="default" rounded class="mb-4"> </icon>
+              <h6 class="text-default text-uppercase">Expert Scientific Review</h6>
+              <p class="description mt-3">
+                Our most comprehensive service involves a complete revision for spelling, grammar, and logical flow, topped with an in-depth scientific review by our Ph.D.-level professional reviewers of Nature Nanotechnology, Science Advances, Advanced Materials, Bioactive Materials, etc. <br />
+                This service is tailored for manuscripts requiring high-level scientific peer-review and revision comments, providing an extensive critique and suggestions akin to a professional peer-review process.
+              </p>
+              <div>
+                <strong>Price:</strong>
+                <p class="price">USD 600 / 1000 words</p>
+                <p class="price">RMB 4270 / 1000 words</p>
+              </div>
+              <div>
+                <strong>Lead Time:</strong>
+                <p>2-7 days</p>
+              </div>
+              <!-- <div>
                                         <badge type="default" rounded>marketing</badge>
                                         <badge type="default" rounded>product</badge>
                                         <badge type="default" rounded>launch</badge>
@@ -147,12 +146,12 @@
                                     <base-button tag="a" href="#" type="default" class="mt-4">
                                         Learn more
                                     </base-button> -->
-                                </card>
-                            </div>
-                </div>
-            </div>
-        </section>
-        <!-- <section class="section section-lg">
+            </card>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="section section-lg">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6 order-md-2">
@@ -190,7 +189,7 @@
                 </div>
             </div>
         </section> -->
-        <!-- <section class="section bg-secondary">
+    <!-- <section class="section bg-secondary">
             <div class="container">
                 <div class="row row-grid align-items-center">
                     <div class="col-md-6">
@@ -227,7 +226,7 @@
                 </div>
             </div>
         </section> -->
-        <!-- <section class="section section section-shaped my-0 overflow-hidden">
+    <!-- <section class="section section section-shaped my-0 overflow-hidden">
             <div class="shape shape-style-1 bg-gradient-warning shape-skew">
                 <span></span>
                 <span></span>
@@ -287,7 +286,7 @@
                 </div>
             </div>
         </section> -->
-        <!-- <section class="section section-lg">
+    <!-- <section class="section section-lg">
             <div class="container">
                 <div class="row justify-content-center text-center mb-lg">
                     <div class="col-lg-8">
@@ -384,30 +383,27 @@
                 </div>
             </div>
         </section> -->
-        <section class="section section-lg pt-0 mt--120">
-            <div class="container">
-                <card gradient="warning"
-                      no-body
-                      shadow-size="lg"
-                      class="border-0">
-                    <div class="p-5">
-                        <div class="row align-items-center">
-                            <div class="col-lg-8">
-                                <h3 class="text-white">Contact us</h3>
-                                <p class="lead text-white mt-3">Email:info@rake.tools</p>
-                            </div>
-                            <!-- <div class="col-lg-3 ml-lg-auto">
+    <section class="section section-lg pt-0 mt--120">
+      <div class="container">
+        <card gradient="warning" no-body shadow-size="lg" class="border-0">
+          <div class="p-5">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h3 class="text-white">Contact us</h3>
+                <p class="lead text-white mt-3">Email:info@rake.tools</p>
+              </div>
+              <!-- <div class="col-lg-3 ml-lg-auto">
                                 <base-button tag="a" href="https://www.creative-tim.com/product/vue-argon-design-system"
                                              type="white" block size="lg">
                                     Download Vue
                                 </base-button>
                             </div> -->
-                        </div>
-                    </div>
-                </card>
             </div>
-        </section>
-        <!-- <section class="section section-shaped my-0 overflow-hidden">
+          </div>
+        </card>
+      </div>
+    </section>
+    <!-- <section class="section section-shaped my-0 overflow-hidden">
             <div class="shape shape-style-3 bg-gradient-default shape-skew">
                 <span></span>
                 <span></span>
@@ -445,7 +441,7 @@
                 </div>
             </div>
         </section> -->
-        <!-- <section class="section section-lg pt-lg-0 section-contact-us">
+    <!-- <section class="section section-lg pt-lg-0 section-contact-us">
             <div class="container">
                 <div class="row justify-content-center mt--300">
                     <div class="col-lg-8">
@@ -473,7 +469,7 @@
                 </div>
             </div>
         </section> -->
-        <!-- <section class="section section-lg">
+    <!-- <section class="section section-lg">
             <div class="container">
                 <div class="row row-grid justify-content-center">
                     <div class="col-lg-8 text-center">
@@ -538,8 +534,7 @@
                 </div>
             </div>
         </section> -->
-
-    </div>
+  </div>
 </template>
 
 <script>
@@ -548,17 +543,17 @@ export default {
   name: "home",
   components: {
     Productbuttons,
-    }
+  },
 };
 </script>
 <style>
-.price{
-    margin-bottom: 0;
+.price {
+  margin-bottom: 0;
 }
-.rake_title{
-    margin-top: -150px;
+.rake_title {
+  margin-top: -150px;
 }
-.mt--120{
-    margin-top: -80px !important;
+.mt--120 {
+  margin-top: -80px !important;
 }
 </style>
