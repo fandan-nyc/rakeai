@@ -14,7 +14,7 @@
           <span></span>
           <span></span>
         </div>
-        <div class="container shape-container d-flex">
+        <div class="container shape-container d-flex" style="padding-top: 15rem">
           <div class="col px-0 rake_title">
             <div class="row">
               <div class="col-lg-8">
@@ -55,7 +55,23 @@
       </div>
     </section> -->
     <!-- <section class="section section-lg pt-lg-0 mt--120"> -->
-    <section class="section section-lg pt-lg-0 mt--300">
+        
+    <section class="section section-lg pt-lg-0 mt--120 mt--300" style="padding-bottom: 2rem;">
+      <div class="container">
+        <card gradient="success" no-body shadow-size="lg" class="border-0">
+          <div class="p-5">
+            <div class="row align-items-center">
+              <div class="col-lg-8">
+                <h3 class="text-white">Contact us</h3>
+                <p class="lead text-white mt-3">Email:info@rake.tools</p>
+              </div>
+              <img src="img/brand/QR.png" class="qr">
+            </div>
+          </div>
+        </card>
+      </div>
+    </section>
+    <section class="section section-lg pt-lg-0 mt--50">
       <div class="container">
         <div class="row justify-content-center">
           <div class="col-lg-12">
@@ -72,14 +88,6 @@
                 <strong>Lead Time:</strong>
                 <p>~24 h</p>
               </div>
-              <!-- <div>
-                                        <badge type="success" rounded>business</badge>
-                                        <badge type="success" rounded>vision</badge>
-                                        <badge type="success" rounded>success</badge>
-                                    </div>
-                                    <base-button tag="a" href="#" type="success" class="mt-4">
-                                        Learn more
-                                    </base-button> -->
             </card>
           </div>
         </div>
@@ -383,26 +391,6 @@
                 </div>
             </div>
         </section> -->
-    <section class="section section-lg pt-0 mt--120">
-      <div class="container">
-        <card gradient="warning" no-body shadow-size="lg" class="border-0">
-          <div class="p-5">
-            <div class="row align-items-center">
-              <div class="col-lg-8">
-                <h3 class="text-white">Contact us</h3>
-                <p class="lead text-white mt-3">Email:info@rake.tools</p>
-              </div>
-              <!-- <div class="col-lg-3 ml-lg-auto">
-                                <base-button tag="a" href="https://www.creative-tim.com/product/vue-argon-design-system"
-                                             type="white" block size="lg">
-                                    Download Vue
-                                </base-button>
-                            </div> -->
-            </div>
-          </div>
-        </card>
-      </div>
-    </section>
     <!-- <section class="section section-shaped my-0 overflow-hidden">
             <div class="shape shape-style-3 bg-gradient-default shape-skew">
                 <span></span>
@@ -555,5 +543,8 @@ export default {
 }
 .mt--120 {
   margin-top: -80px !important;
+}
+.qr {
+    width: 100px;
 }
 </style>
