@@ -8,31 +8,31 @@ import Landing from "./views/Landing.vue";
 import Login from "./views/Login.vue";
 import Register from "./views/Register.vue";
 import Profile from "./views/Profile.vue";
-import Aboutus from "./views/Aboutus.vue";
 
 Vue.use(Router);
 
 export default new Router({
   linkExactActiveClass: "active",
+  mode: "history", // 启用"history"模式
   routes: [
-    // {
-    //   path: "/",
-    //   name: "home",
-    //   components: {
-    //     header: AppHeader,
-    //     default: Home,
-    //     footer: AppFooter
-    //   }
-    // },
     {
       path: "/",
-      name: "aboutus",
+      name: "home",
       components: {
         header: AppHeader,
-        default: Aboutus,
-        footer: AppFooter
-      }
+        default: Home,
+        footer: AppFooter,
+      },
     },
+    // {
+    //   path: "/",
+    //   name: "aboutus",
+    //   components: {
+    //     header: AppHeader,
+    //     default: Aboutus,
+    //     footer: AppFooter,
+    //   },
+    // },
     // {
     //   path: "/components",
     //   name: "components",
@@ -51,15 +51,15 @@ export default new Router({
     //     footer: AppFooter
     //   }
     // },
-    // {
-    //   path: "/login",
-    //   name: "login",
-    //   components: {
-    //     header: AppHeader,
-    //     default: Login,
-    //     footer: AppFooter
-    //   }
-    // },
+    {
+      path: "/login",
+      name: "login",
+      components: {
+        header: AppHeader,
+        default: Login,
+        footer: AppFooter,
+      },
+    },
     // {
     //   path: "/register",
     //   name: "register",
@@ -85,5 +85,5 @@ export default new Router({
     } else {
       return { x: 0, y: 0 };
     }
-  }
+  },
 });
