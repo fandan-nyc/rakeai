@@ -1,4 +1,3 @@
-import userInfo from "./user";
 import apiInstance from "./interceptor";
 
 export async function login(username, password) {

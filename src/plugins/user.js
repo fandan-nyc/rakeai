@@ -11,6 +11,6 @@ const userMutations = {
 };
 export default {
   namespaced: true,
-  userState,
-  userMutations,
+  state: userState,
+  mutations: userMutations,
 };

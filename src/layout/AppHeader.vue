@@ -6,16 +6,14 @@
       </router-link>
 
       <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-        <router-link v-if="!$store.state.user.userInfo.username">
-          <a slot="title" href="/login" class="nav-link" data-toggle="dropdown" role="button">
+        <router-link to="/login" v-if="!$store.state.user.userInfo.username" class="nav-link" data-toggle="dropdown" role="button">
             <i class="ni ni-ui-04 d-lg-none"></i>
             <span class="nav-link-inner--text">Log in</span>
-          </a>
         </router-link>
-        <a slot="title" href="#" class="nav-link" data-toggle="dropdown" role="button">
-          <i class="ni ni-ui-04 d-lg-none"></i>
-          <span class="nav-link-inner--text">{{ $store.state.user.userInfo.username }}</span>
-        </a>
+        <router-link to="/" v-if="$store.state.user.userInfo.username" class="nav-link" data-toggle="dropdown" role="button">
+            <i class="ni ni-ui-04 d-lg-none"></i>
+            <span class="nav-link-inner--text">{{ $store.state.user.userInfo.username }}</span>
+        </router-link>
       </ul>
     </base-nav>
   </header>
