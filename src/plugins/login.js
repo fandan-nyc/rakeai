@@ -1,9 +1,9 @@
 import apiInstance from "./interceptor";
 
+export default login;
 export async function login(username, password) {
   try {
     const hashedPassword = await hashPassword(password);
-
     // 调用登录API
     const response = await apiInstance.post("/login", { username, password: hashedPassword });
 

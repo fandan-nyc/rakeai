@@ -10,14 +10,14 @@
             <span></span>
             <span></span>
         </div>
-        <div class="container pt-lg-md">
+        <div class="container pt-lg-md pt-100 pb-100">
             <div class="row justify-content-center">
                 <div class="col-lg-5">
                     <card type="secondary" shadow
                           header-classes="bg-white pb-5"
                           body-classes="px-lg-5 py-lg-5"
                           class="border-0">
-                        <template>
+                        <!-- <template>
                             <div class="text-muted text-center mb-3">
                                 <small>Sign in with</small>
                             </div>
@@ -32,27 +32,29 @@
                                     Google
                                 </base-button>
                             </div>
-                        </template>
+                        </template> -->
                         <template>
-                            <div class="text-center text-muted mb-4">
+                            <!-- <div class="text-center text-muted mb-4">
                                 <small>Or sign in with credentials</small>
-                            </div>
+                            </div> -->
                             <form role="form">
-                                <base-input alternative
+                                <base-input v-model="username"
+                                            alternative
                                             class="mb-3"
-                                            placeholder="Email"
-                                            addon-left-icon="ni ni-email-83">
+                                            placeholder="Account"
+                                            addon-left-icon="ni ni-user-run">
                                 </base-input>
-                                <base-input alternative
+                                <base-input v-model="password"
+                                            alternative
                                             type="password"
                                             placeholder="Password"
                                             addon-left-icon="ni ni-lock-circle-open">
                                 </base-input>
-                                <base-checkbox>
+                                <base-checkbox v-model="rememberMe">
                                     Remember me
                                 </base-checkbox>
                                 <div class="text-center">
-                                    <base-button type="primary" class="my-4">Sign In</base-button>
+                                    <base-button type="primary" class="my-4" @click="userLogin">Sign In</base-button>
                                 </div>
                             </form>
                         </template>
@@ -75,7 +77,26 @@
     </section>
 </template>
 <script>
-export default {};
+import login from "../plugins/login";
+export default {
+  data() {
+    return {
+      username: '',
+      password: '',
+      rememberMe: false,
+    };
+  },
+  methods: {
+    userLogin() {
+      if (this.username == "" || this.username == null){
+        alert("account should not be empty");
+      }
+      else{
+        login(this.username, this.password);
+      }
+    },
+  },
+};
 </script>
 <style>
 </style>

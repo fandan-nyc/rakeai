@@ -1,6 +1,7 @@
 // main.js 或者其他入口文件
 import axios from "axios";
 import serverUrl from "./config";
+import Vue from "vue";
 
 const apiInstance = axios.create({
   baseURL: serverUrl, // 设置基础URL
@@ -34,3 +35,4 @@ apiInstance.interceptors.response.use(
 
 // 将axios实例挂载到Vue原型上，方便在组件中使用
 Vue.prototype.$api = apiInstance;
+export default apiInstance;
