@@ -2,6 +2,7 @@
 import axios from "axios";
 import serverUrl from "./config";
 import Vue from "vue";
+import store from "./store"
 
 const apiInstance = axios.create({
   baseURL: serverUrl, // 设置基础URL
@@ -11,8 +12,10 @@ const apiInstance = axios.create({
 // 请求拦截器
 apiInstance.interceptors.request.use(
   config => {
-    // 在发送请求之前做些什么
-    // 可以在这里设置请求头等
+    if(store.state.userInfo && store.state.userInfo.cookie){
+      const cookie = store.state.userInfo.cookie;
+      config.headers["cookie"] = cookie;
+    }
     return config;
   },
   error => {

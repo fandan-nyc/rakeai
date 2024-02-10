@@ -77,7 +77,8 @@
     </section>
 </template>
 <script>
-import login from "../plugins/login";
+// import login from "../plugins/login";
+import apiInstance from "../plugins/interceptor";
 export default {
   data() {
     return {
@@ -87,14 +88,50 @@ export default {
     };
   },
   methods: {
-    userLogin() {
+    async userLogin() {
       if (this.username == "" || this.username == null){
         alert("account should not be empty");
       }
       else{
-        login(this.username, this.password);
+        await this.login(this.username, this.password);
       }
     },
+
+    async login(username, password) {
+        try {
+            const hashedPassword = await this.hashPassword(password);
+            // 调用登录API`
+            const response = await apiInstance.post("/login", { username, password: hashedPassword });
+
+            // 处理登录成功的逻辑
+            if (response.data.success) {
+            // 更新用户信息
+            console.log(response.data.cookie);
+            this.$store.commit("user/setUser", {userName: username, cookie: response.data.cookie});
+            this.$router.push({name: 'home'})
+            } else {
+            // 处理登录失败的逻辑
+            console.error(response.data.message);
+            return false; // 表示登录失败
+            }
+        } catch (error) {
+            // 处理登录过程中的错误
+            console.error(error);
+            return false; // 表示登录失败
+        }
+    },
+    async hashPassword(password) {
+        const encoder = new TextEncoder();
+        const data = encoder.encode(password);
+
+        const hashBuffer = await crypto.subtle.digest("SHA-256", data);
+
+        const hashArray = Array.from(new Uint8Array(hashBuffer));
+        const hashHex = hashArray.map(byte => byte.toString(16).padStart(2, "0")).join("");
+
+        return hashHex;
+    }
+
   },
 };
 </script>
